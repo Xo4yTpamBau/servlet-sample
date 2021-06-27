@@ -1,0 +1,66 @@
+GET http://localhost:8080/test
+
+###
+
+GET http://localhost:8080/calc?num1=2&num2=23&operation=sum
+
+###
+
+GET http://localhost:8080/history
+
+###
+
+GET http://localhost:8080/history?id=1
+
+###
+
+GET http://localhost:8080/history?type=sum
+
+###
+
+GET http://localhost:8080/calc?num1=2&num2=23&operation=mod
+
+###
+
+POST http://localhost:8080/registration
+Content-Type: application/x-www-form-urlencoded
+
+login=test&password=qwerty
+
+###
+
+GET http://localhost:8080/logout
+
+###
+
+POST http://localhost:8080/authorization
+Content-Type: application/x-www-form-urlencoded
+
+login=test&password=qwerty
+
+###
+
+POST http://localhost:8080/user/changeName
+Content-Type: application/x-www-form-urlencoded
+
+name=newName
+
+###
+
+POST http://localhost:8080/user/changeLogin
+Content-Type: application/x-www-form-urlencoded
+
+login=newLogin
+
+###
+
+POST http://localhost:8080/user/changePassword
+Content-Type: application/x-www-form-urlencoded
+
+password=newPassword
+
+###
+
+GET http://localhost:8080/user?id=1
+
+###
